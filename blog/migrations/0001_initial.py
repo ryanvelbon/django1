@@ -34,8 +34,8 @@ class Migration(migrations.Migration):
                 ('content', models.TextField()),
                 ('created_at', models.DateTimeField(default=django.utils.timezone.now)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
-                ('categories', models.ManyToManyField(blank=True, to='cms.category')),
-                ('tags', models.ManyToManyField(blank=True, to='cms.tag')),
+                ('categories', models.ManyToManyField(blank=True, to='blog.category')),
+                ('tags', models.ManyToManyField(blank=True, to='blog.tag')),
             ],
         ),
     ]
